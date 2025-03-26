@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyzed Data</title>
+    <style>
+        /* Background Animation */
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(-45deg, #1e3c72, #2a5298, #6dd5ed, #ff758c);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+        }
+
+        h3 {
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ff758c;
+        }
+
+        p {
+            font-size: 18px;
+            color: white;
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
+
+        a:hover {
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Your Analyzed  Text Is:</h3>
+        <p>{{ analyzed }}</p>
+        <a href="/">Back to Text Analyzer</a>
+    </div>
+
+</body>
+</html>
